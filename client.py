@@ -23,6 +23,11 @@ def send():
     data.append("you > " + sdata)
     display(data)
 
+def receive():
+    rdata = skt.recv(1024)
+    data.append(rdata.decode())
+    display(data)
+
 def display(data):
     for message in data:
         l = Label(root, text=message, bg="#aeee8c").grid(row=0, column=0, columnspan=2, sticky="NSEW")
