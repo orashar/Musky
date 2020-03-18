@@ -1,2 +1,2 @@
 # Musky
-A chat application that connects the users worldwide.
+A chat application tfor Linux systems.
